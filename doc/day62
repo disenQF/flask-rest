@@ -143,6 +143,28 @@
        将仓库的位置： http://sssss/xx.git 复制一下
 
    5） 在项目的根目录下，初始化本地仓库并添加远程仓库
+       git init
+       git remote add origin https://github.com/disenQF/flask-rest.git
+
+   6) 在本地仓库添加文件
+       git add .   或 git add *
+
+       注意： 不要添加 .idea 文件目录（包含了当前开发工具中相关的环境配置）
+
+   7）提交并推送到 github远程仓库中
+       git commit -m '初始化提交flask-rest项目'
+
+       # 第一次上传时，因为远程仓库不存在master主分支
+       git push --set-upstream origin master
+
+       ＃ 以后再上传时， 不使用--set-upstream参数
+       git push origin master
+
+   8) 在添加文件之后，（开始跟踪某一文件）－ 绿色
+
+      可以撤消跟踪： git reset head 文件名或目录名
+
+
 
 
 
